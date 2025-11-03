@@ -25,7 +25,7 @@ The violated invariant is:
 (northbound_present ∨ southbound_present ∨ northbound_approach ∨ southbound_approach) → arms_down
 
 This means that whenever a train is approaching or present, the barrier must be lowered.
-However, in the FSM, after the nb_approach event, the system enters a “ringing, arms_up” state for 10 seconds before lowering the barrier. During that interval, the train is approaching but the crossing remains open. This is an unsafe transient condition.
+However, in the FSM, after the nb_approach event, the system enters a “ringing, arms_up” state for 10 seconds before lowering the barrier. During that interval, the train is approaching but the crossing remains open. This is an unsafe transient condition. 
 
 # Prove It
 
