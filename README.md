@@ -48,11 +48,12 @@ However, in the FSM, after the nb_approach event, the system enters a “ringing
 |     14     |       1       |       1      |            1           |            0           |          18         |          14         |         12        |         21        |         14        |                   |
 |     15     |       1       |       1      |            1           |            1           |          18         |          19         |         13        |         14        |         15        |                   |
 
-| **number** |	**invariant** |
-|   16	| If train is present, barrier is lowered|
-| 17 | Barrier only lowered when alarm is on |
-| 18 | North train approach --> north train present |
-| 19 | South train approach --> south train present |
-| 20 | Nouth train present -->  north train departs |
-| 21 | South train present -->  south train departs |
-| 22 | Timer elpased when event occurs |
+| **Number** | **Invariant** |
+|-----------:|----------------|
+| **16** | If a train is present, the barrier is lowered. |
+| **17** | The barrier is only lowered when the alarm is on. |
+| **18** | North train approach → north train becomes present. |
+| **19** | South train approach → south train becomes present. |
+| **20** | If a north train is present, a north depart event must occur. |
+| **21** | If a south train is present, a south depart event must occur. |
+| **22** | Timer elapsed (ringing) only occurs when the alarm is on. |
