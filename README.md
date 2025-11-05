@@ -20,6 +20,8 @@ arms_up → ¬(northbound_present ∨ southbound_present ∨ northbound_approach
 
 # Varying Invariants
 
+![alt text](image.png)
+
 The violated invariant is:
 
 (northbound_present ∨ southbound_present ∨ northbound_approach ∨ southbound_approach) → arms_down
