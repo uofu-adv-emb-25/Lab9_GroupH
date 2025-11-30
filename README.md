@@ -59,3 +59,7 @@ However, in the FSM, after the nb_approach event, the system enters a “ringing
 | **20** | If a north train is present, a north depart event must occur. |
 | **21** | If a south train is present, a south depart event must occur. |
 | **22** | Timer elapsed (ringing) only occurs when the alarm is on. |
+
+# Final FSM
+
+![alt text](final.png)
